@@ -1,0 +1,8 @@
+* { margin: 0; padding: 0; border: 0 }
+
+body { background: #000 }
+a.signin { margin: 200px auto; background: url(../img/instagram_signin.png) 0 0 no-repeat; width: 200px; height: 29px; display: block; cursor: pointer }
+#mainContainer { width: 1000px; margin: 0 auto; position: relative }
+.screen { position: absolute; z-index: 3; width: 1000px; height: 1000px; opacity: 0.2; background: #f00 }
+.over { position: absolute; z-index: 2; width: 1000px; opacity: 0.4 }
+.thumbnail { width: 20px; height: 20px; float: left }
