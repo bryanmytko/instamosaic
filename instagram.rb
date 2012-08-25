@@ -4,7 +4,7 @@ require "instagram"
 enable :sessions
 
 #live
-CALLBACK_URL = "http://limitless-beyond-2035.herokuapp.com/oauth/callback"
+CALLBACK_URL = "http://instamosaic.herokuapp.com/oauth/callback"
 #dev
 #CALLBACK_URL = "http://0.0.0.0:4567/oauth/callback"
 
