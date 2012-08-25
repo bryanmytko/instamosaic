@@ -4,17 +4,17 @@ require "instagram"
 enable :sessions
 
 #live
-#CALLBACK_URL = "http://cold-snow-7630.herokuapp.com/oauth/callback"
+CALLBACK_URL = "http://limitless-beyond-2035.herokuapp.com/oauth/callback"
 #dev
-CALLBACK_URL = "http://0.0.0.0:4567/oauth/callback"
+#CALLBACK_URL = "http://0.0.0.0:4567/oauth/callback"
 
 Instagram.configure do |config|
   #live
-  #config.client_id = "7b7e12a68e954eb3beb417948d410011"
-  #config.client_secret = "daeda600ea2f400d8936a94fd9ec9e16"
+  config.client_id = "01821786b2694a6babdbe8d57f0e22bf"
+  config.client_secret = "11c3deaa08404d1791b909896d4c7027"
   #dev
-  config.client_id = "7fc7b7b6c6964427800ef5dbecc58582"
-  config.client_secret = "8286ed2ce28d4f3b98e0768e855e510c"
+  #config.client_id = "7fc7b7b6c6964427800ef5dbecc58582"
+  #config.client_secret = "8286ed2ce28d4f3b98e0768e855e510c"
 end
 
 get "/" do
@@ -38,6 +38,7 @@ get "/mosaic" do
   
   @html = ''
   @userpic = client.user.profile_picture
+  @randColor = '%06x' % (rand * 0xffffff)
 
   media = client.user_media_feed
   imgs = Array.new
