@@ -6,17 +6,17 @@
 <link href="/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-	<div class="ajax"></div>
-	<script>
-	$(document).ready(function(){
-		$('.ajax').hide();
-		$('#mainContainer').fadeIn('slow');
-		capture();
-	});
-	</script>
-	<div id="mainContainer">
-		<div class="screen" style="background: #<%= @randColor %>;"></div>
-		<img src="<%= @userpic %>" alt="" class="over" />
+  <div class="ajax"></div>
+  <script>
+  $(document).ready(function(){
+    $('.ajax').hide();
+    $('#mainContainer').fadeIn('slow');
+    capture();
+  });
+  </script>
+  <div id="mainContainer">
+    <div class="screen" style="background: #<%= @randColor %>;"></div>
+    <img src="<%= @userpic %>" alt="" class="over" />
     <%= @html %>
   </div>
 </body>
