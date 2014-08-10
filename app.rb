@@ -1,8 +1,5 @@
 require "sinatra"
 require "instagram"
-require 'dotenv'
-
-Dotenv.load
 
 enable :sessions
 
@@ -11,6 +8,8 @@ configure :production do
 end
 
 configure :development, :test do
+  require 'dotenv'
+  Dotenv.load
   CALLBACK_URL = "http://0.0.0.0:4567/oauth/callback"
 end
 
