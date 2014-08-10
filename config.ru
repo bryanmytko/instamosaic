@@ -1,2 +1,2 @@
-require './instagram'
+require_relative 'instagram'
 run Sinatra::Application
