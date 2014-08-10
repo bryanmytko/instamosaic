@@ -1,2 +1,2 @@
-require_relative 'instagram'
+#require_relative 'instagram'
 run Sinatra::Application
